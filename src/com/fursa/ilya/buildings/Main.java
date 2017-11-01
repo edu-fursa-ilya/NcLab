@@ -1,5 +1,10 @@
 package com.fursa.ilya.buildings;
 
+import com.fursa.ilya.buildings.lab1.Dwelling;
+import com.fursa.ilya.buildings.lab1.DwellingFloor;
+import com.fursa.ilya.buildings.lab1.Flat;
+import com.fursa.ilya.buildings.lab2.MyOneLinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -53,5 +58,14 @@ public class Main {
         for (Flat flat: sortedFlatsArr) {
             System.out.println("Квартира имеет площадь: " + flat.getSquare());
         }
+
+
+        MyOneLinkedList<String> myOneLinkedList = new MyOneLinkedList<>();
+        myOneLinkedList.addAsFirst("Hello");
+        myOneLinkedList.addAsLast("World");
+        myOneLinkedList.addAsLast("My name is Ilya I'm a Java developer");
+        myOneLinkedList.remove("World");
+        myOneLinkedList.printAll();
+
     }
 }

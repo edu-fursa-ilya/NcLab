@@ -1,23 +1,22 @@
-package com.fursa.ilya.buildings;
+package com.fursa.ilya.buildings.lab2;
 
-//описание квартиры жилого дома
-public class Flat {
+public class Office {
+    private static final double DEFAULT_OFFICE_SQUARE = 250;
+    public static final int DEFAULT_ROOM_COUNT = 1;
     private double square;
     private int roomCounter;
-    private static final int DEFAULT_ROOM_COUNT = 2;
-    private static final double DEFAULT_FLAT_SQUARE = 50.0;
 
-    public Flat() {
-        this.square = DEFAULT_FLAT_SQUARE;
+    public Office() {
         this.roomCounter = DEFAULT_ROOM_COUNT;
+        this.square = DEFAULT_OFFICE_SQUARE;
     }
 
-    public Flat(double square) {
+    public Office(double square) {
+        this.roomCounter = DEFAULT_ROOM_COUNT;
         this.square = square;
-        this.roomCounter = DEFAULT_ROOM_COUNT;
     }
 
-    public Flat(double square, int roomCounter) {
+    public Office(double square, int roomCounter) {
         this.square = square;
         this.roomCounter = roomCounter;
     }

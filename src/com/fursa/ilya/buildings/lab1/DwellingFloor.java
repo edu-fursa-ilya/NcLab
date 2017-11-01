@@ -1,4 +1,4 @@
-package com.fursa.ilya.buildings;
+package com.fursa.ilya.buildings.lab1;
 
 //этаж жилого здания
 public class DwellingFloor {
